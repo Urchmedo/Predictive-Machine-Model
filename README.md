@@ -2,9 +2,9 @@
 This documentation outlines the process of developing and evaluating a linear regression model to predict Nigeria's inflation rate using real-world economic data. The model leverages the relationship between various Consumer Price Index (CPI) components and key economic indicators to predict the inflation rate, and its performance is measured using the Mean Absolute Error (MAE) metric.
 ________________________________________
 # Problem Statement
-•	Objective: <br>
+•	**Objective:** <br>
 To create a predictive model that can estimate Nigeria's inflation rate based on select features of various CPI components. <br>
-•	Goal:<br>
+•	**Goal:** <br>
 The model will take input values for selected economic features (like CPI components) and predict the inflation rate, providing a tool for forecasting and understanding economic trends.
 ________________________________________
 # Data Description
@@ -15,7 +15,7 @@ The dataset provides a comprehensive overview of Nigeria's monthly inflation rat
 This dataset is ideal for time series analysis, forecasting, and economic modeling, capturing significant trends that are valuable for economic prediction.
 ________________________________________
 ## Model Training
-Import Statements and Dataset<br>
+**Import Statements and Dataset**  <br>
 To begin with, the necessary libraries and modules are imported, and the dataset is loaded into the model.
 
 import pandas as pd <br>
