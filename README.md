@@ -18,15 +18,15 @@ ________________________________________
 Import Statements and Dataset
 To begin with, the necessary libraries and modules are imported, and the dataset is loaded into the model.
 
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-import sklearn
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_absolute_error
-from sklearn.metrics import mean_squared_error, r2_score
+import pandas as pd <br>
+import numpy as np <br>
+import matplotlib.pyplot as plt <br>
+import seaborn as sns <br>
+import sklearn <br>
+from sklearn.model_selection import train_test_split <br>
+from sklearn.linear_model import LinearRegression <br>
+from sklearn.metrics import mean_absolute_error <br>
+from sklearn.metrics import mean_squared_error, r2_score <br>
 
 ## Data Splitting
 The dataset contains both features (independent variables) and the target variable (inflation rate). Here, we use one feature, CPI_Food, for model training.
