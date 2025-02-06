@@ -2,20 +2,20 @@
 This documentation outlines the process of developing and evaluating a linear regression model to predict Nigeria's inflation rate using real-world economic data. The model leverages the relationship between various Consumer Price Index (CPI) components and key economic indicators to predict the inflation rate, and its performance is measured using the Mean Absolute Error (MAE) metric.
 ________________________________________
 # Problem Statement
-•	Objective:
+•	Objective: <br>
 To create a predictive model that can estimate Nigeria's inflation rate based on select features of various CPI components. <br>
 •	Goal:<br>
 The model will take input values for selected economic features (like CPI components) and predict the inflation rate, providing a tool for forecasting and understanding economic trends.
 ________________________________________
 # Data Description
-The dataset provides a comprehensive overview of Nigeria's monthly inflation rates from March 2003 to June 2024. It also includes key economic indicators such as:
+The dataset provides a comprehensive overview of Nigeria's monthly inflation rates from March 2003 to June 2024. It also includes key economic indicators such as:<br>
 •	Crude oil prices<br>
 •	Production levels<br>
 •	Various Consumer Price Index (CPI) components<br>
 This dataset is ideal for time series analysis, forecasting, and economic modeling, capturing significant trends that are valuable for economic prediction.
 ________________________________________
 ## Model Training
-Import Statements and Dataset
+Import Statements and Dataset<br>
 To begin with, the necessary libraries and modules are imported, and the dataset is loaded into the model.
 
 import pandas as pd <br>
@@ -29,7 +29,7 @@ from sklearn.metrics import mean_absolute_error <br>
 from sklearn.metrics import mean_squared_error, r2_score <br>
 
 ## Data Splitting
-The dataset contains both features (independent variables) and the target variable (inflation rate). Here, we use one feature, CPI_Food, for model training.
+The dataset contains both features (independent variables) and the target variable (inflation rate). Here, we use one feature, CPI_Food, for model training.<br>
 •	X (features): Consumer Price Index (CPI) for food <br>
 •	y (target): Inflation rate <br>
 The data is split into training and test sets, with an 80%/20% ratio for training and testing, respectively: <br>
@@ -46,7 +46,7 @@ ________________________________________
 
 
 # Model Evaluation
-After training the model, predictions are made on both the training and test sets. The performance is evaluated using the Mean Absolute Error (MAE) metric, which measures the average magnitude of errors in a set of predictions. A lower MAE indicates better model accuracy.
+After training the model, predictions are made on both the training and test sets. The performance is evaluated using the Mean Absolute Error (MAE) metric, which measures the average magnitude of errors in a set of predictions. A lower MAE indicates better model accuracy. <br>
 •	Baseline Model MAE: 3.45 (This is the performance of a simple guess, like predicting the average value of the target variable for all data points.) <br>
 •	Model (Train) MAE: 2.42 (The MAE on the training data, showing how well the model fits the training set.) <br>
 •	Model (Test) MAE: 2.33 (The MAE on the test data, showing how well the model generalizes to unseen data.) <br>
