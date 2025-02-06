@@ -22,6 +22,7 @@ ________________________________________
 ## Model Training
 
 **Import Statements and Dataset**  <br>
+
 To begin with, the necessary libraries and modules are imported, and the dataset is loaded into the model.
 
 import pandas as pd <br>
@@ -39,6 +40,7 @@ from sklearn.metrics import mean_squared_error, r2_score <br>
 The dataset contains both features (independent variables) and the target variable (inflation rate). Here, we use one feature, CPI_Food, for model training.<br>
 •	X (features): Consumer Price Index (CPI) for food <br>
 •	y (target): Inflation rate <br>
+
 The data is split into training and test sets, with an 80%/20% ratio for training and testing, respectively: <br>
 
 X = data['CPI_Food'] <br>
@@ -59,11 +61,15 @@ ________________________________________
 After training the model, predictions are made on both the training and test sets. The performance is evaluated using the Mean Absolute Error (MAE) metric, which measures the average magnitude of errors in a set of predictions. A lower MAE indicates better model accuracy. <br>
 
 •	Baseline Model MAE: 3.45 (This is the performance of a simple guess, like predicting the average value of the target variable for all data points.) <br>
+
 •	Model (Train) MAE: 2.42 (The MAE on the training data, showing how well the model fits the training set.) <br>
+
 •	Model (Test) MAE: 2.33 (The MAE on the test data, showing how well the model generalizes to unseen data.) <br>
+
 The test MAE of 2.33 demonstrates that the model’s predictions are closer to the actual inflation rates compared to the baseline model (MAE of 3.45), indicating an improvement in predictive accuracy.
 python
 Copy
+
 # Make predictions on train and test sets
 
 train_predictions = model.predict(X_train.values.reshape(-1, 1)) <br>
