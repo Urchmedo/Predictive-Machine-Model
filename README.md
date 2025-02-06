@@ -27,6 +27,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error
 from sklearn.metrics import mean_squared_error, r2_score
+
 ## Data Splitting
 The dataset contains both features (independent variables) and the target variable (inflation rate). Here, we use one feature, CPI_Food, for model training.
 •	X (features): Consumer Price Index (CPI) for food
